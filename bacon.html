@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Bacon slizzing
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: 50vw;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            width: 100vw;
+            height: 100vh;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%, -100%);
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body onclick="play()">
+    <script>
+        function play() {
+            let body = document.getElementsByTagName('body');
+            body[0].style.backgroundImage = "url('bacon.gif')";
+            body[0].style.cursor = "default";
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+
+    <audio id="audio" src="bacon.mp3" loop></audio>
+
+</body>
+
+</html>
