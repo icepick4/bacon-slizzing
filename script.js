@@ -8,7 +8,7 @@ trustButton.addEventListener('click', () => {
 function play() {
     const body = document.getElementById('body');
     body.style.backgroundImage = "url('bacon.gif')";
-    body.style.cursor = "default";
-    let audio = document.getElementById("audio");
+    body.style.cursor = 'default';
+    let audio = document.getElementById('audio');
     audio.play();
 }
